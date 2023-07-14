@@ -1,35 +1,25 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- * main - Prints 3 combination of numbers
- *
- * Return: Always (Success)
+ * main - Entry point
+ * Description: prints numbers
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int c, i, k;
+	int i;
 
-	for (c = '0'; c <= '9'; c++)
+	for (i = '0'; i <= '9' ; i++)
 	{
-		for (i = '0'; i <= '9'; i++)
-		{
-			for (k = '0'; k <= '9'; k++)
-			{
-				if (c < i && i < k)
-				{
-					putchar(c);
-					putchar(i);
-					putchar(k);
+		putchar(i);
 
-					if (c != '7')
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-			}
+		if (i != '9')
+		{
+			putchar(',');
+			putchar(' ');
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
