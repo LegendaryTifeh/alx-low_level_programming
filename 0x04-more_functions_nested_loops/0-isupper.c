@@ -1,4 +1,3 @@
-task 0
 #include <ctype.h>
 #include "main.h"
 /**
