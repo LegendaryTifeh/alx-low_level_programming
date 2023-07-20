@@ -1,18 +1,12 @@
-#include <ctype.h>
 #include "main.h"
 /**
- * _isdigit - A function that checks for a digit.
+ * mul - multiplies two integers and returns the result
  *
- * @c: is the character to  check
- *
- * Return: 1 if c is a digit otherwise 0
+ * @a: is the first number
+ * @b: is the second number
+ * Return: the product value of @a and @b
  */
-int _isdigit(int c)
+int mul(int a, int b)
 {
-	int a = isdigit(c);
-
-	if (a == 0)
-		return (a);
-	else
-		return (1);
+	return (a * b);
 }
