@@ -17,5 +17,4 @@ i = 0;
 		i++;
 	}
 	return (s);
-}
-/*Bwave ICT 
+} 
